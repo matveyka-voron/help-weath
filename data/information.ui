@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>474</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>СПРАВКА - Дополнительная информация</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(65, 65, 65)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_info">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>10</y>
+      <width>311</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 17px;color: white</string>
+    </property>
+    <property name="text">
+     <string>Справка по использованию программы</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="text_info">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>451</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white</string>
+    </property>
+    <property name="plainText">
+     <string>Справка по использованию приложения для просмотра информации о погоде - help weath.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ИНСТРУКЦИЯ ПО ИСПОЛЬЗОВАНИЮ
+1) При открытии программы, будет отображатся информация о погоде региона из &quot;избранного&quot; (по умолчанию городом из избранного является Москва)
+2) В верхнее поле ввода можно ввести другой регион (например, город/село/посёлок и т.д.).
+
+При нажатии кнопки &quot;Посмотреть&quot;, обновлённая информация о погоде будет отображена ниже в зависимости от того, какой регион вы ввели в поле выше.
+
+Если вместо &quot;Посмотреть&quot;, вы нажали кнопку &quot;В избранное&quot;, то при последующем открытии программы, по умолчанию будет отображатся погодная информация о том регионе, который вы добавили в избранное.
+
+3) При запросе информации (кнопка &quot;Посмотреть&quot;), в полях ниже будет выведено:
+* Статус погоды в регионе
+* Температура в °C (округлённая до десятых)
+* Скорость ветра в м/с (округлённая до целых)
+* Влажность в %
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ИНФОРМАЦИЯ
+Текущая версия программы: V1.0-FULL
+
+Разработчик(и):
+- Воронцов Матвей
+
+Информация о погоде берётся с сервиса:
+- https://openweathermap.org
+
+Язык программирования: Python 3.7.8 x86
+
+Модули:
+- PyQt5 (графический интерфейс)
+- pyowm (информаиця о погоде)
+- sys, os
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+СВЯЗЬ С РАЗРАБОТЧИКОМ:
+- https://vk.com/kipelov_aria</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
